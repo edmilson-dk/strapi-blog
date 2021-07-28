@@ -1,12 +1,12 @@
-import '../styles/globals.css';
-
+import { createContext } from "react";
 import App from "next/app";
 import Head from "next/head";
 import Script from "next/script";
 
-import { createContext } from "react";
 import { getStrapiMedia } from "../lib/media";
 import { fetchStrapiApi } from "../lib/strapi-api";
+
+import '../styles/globals.css';
 
 // Store Strapi Global object in context
 export const GlobalContext = createContext({});
