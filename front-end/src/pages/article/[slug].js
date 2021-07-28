@@ -82,7 +82,7 @@ export async function getStaticProps({ params }) {
     `/articles?slug=${params.slug}`
   );
   const categories = await fetchStrapiApi("/categories");
-  console.log(articles);
+
   return {
     props: { article: articles[0], categories },
     revalidate: 1,
